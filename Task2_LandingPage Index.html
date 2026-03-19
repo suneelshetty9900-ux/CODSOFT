@@ -2,57 +2,146 @@
 <html>
 <head>
 <title>Landing Page</title>
+
 <style>
+
 body{
-font-family: Arial;
 margin:0;
+font-family:Arial;
+background:#f4f4f4;
 }
 
-header{
+/* NAVBAR */
+nav{
 background:#333;
-color:white;
-padding:20px;
+padding:15px;
 text-align:center;
 }
 
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#6c4ab6;
+}
+
+/* HERO */
+header{
+background:#6c4ab6;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+header h1{
+font-size:45px;
+}
+
+header p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+button{
+background:white;
+color:#6c4ab6;
+border:none;
+padding:12px 25px;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#eee;
+}
+
+/* FEATURES */
 section{
 padding:40px;
 text-align:center;
 }
 
-button{
-padding:10px 20px;
-background:#007BFF;
-color:white;
-border:none;
-cursor:pointer;
+.features{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+width:220px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+
+/* FOOTER */
 footer{
 background:#333;
 color:white;
 text-align:center;
-padding:10px;
+padding:15px;
 }
+
 </style>
+
 </head>
 
 <body>
 
+<nav>
+<a href="#">Home</a>
+<a href="#">Features</a>
+<a href="#">Contact</a>
+</nav>
+
 <header>
-<h1>Welcome to My Website</h1>
-<p>This is my landing page for CodSoft internship</p>
+<h1>Build Your Future with Web Development</h1>
+<p>Create beautiful and responsive websites easily</p>
+
+<a href="welcome.html">
+<button>Get Started</button>
+</a>
+
 </header>
 
 <section>
-<h2>About</h2>
-<p>This page demonstrates a simple landing page using HTML and CSS.</p>
+<h2>Features</h2>
 
-<button>Get Started</button>
+<div class="features">
+
+<div class="card">
+<h3>Fast</h3>
+<p>Quick and efficient design.</p>
+</div>
+
+<div class="card">
+<h3>Responsive</h3>
+<p>Works on all devices.</p>
+</div>
+
+<div class="card">
+<h3>Modern UI</h3>
+<p>Clean and attractive layout.</p>
+</div>
+
+</div>
+
 </section>
 
 <footer>
-<p>Created by Santhosh</p>
+<p>© 2026 Santhosh</p>
 </footer>
 
 </body>
